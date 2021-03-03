@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tensorflow normal Project</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<input type="text" placeholder="enter image url" id="image_url">
+            <button id="urlpic" onclick="urlPic()">Go!</button><br/>
+			<p>OR</p><br/>
+		<input type="file" id="image2_url" >
+		<h5 id="hint" >(After the image loads, click on it to predict)</h5>
+		<div class="skyNet" >
+			<!-- <img
+				src="https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260"
+				width="100%"
+				crossorigin="anonymous"
+			/> -->
+			<!-- <img
+				src="https://images.pexels.com/photos/1526814/pexels-photo-1526814.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+				width="50%"
+				crossorigin="anonymous"
+			/> -->
+			<!-- Funny one -->
+			<img
+			    id="img2"
+				src=""
+				alt="image preview"
+				style="width:50%;display:none"
+				crossorigin="anonymous"
+				title='click to predict'
+			/>
+			
+			
+           
+		</div>
+		<p id="prediction"></p>
+		<button onclick="clearPic()" id="clearpic" style="display:none">Clear image</button>
+		<script
+			src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"
+			type="text/javascript"
+		></script>
+		<!-- <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@1.0.0"> </script> -->
+        
+		<script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+		<!-- <script src="https://raw.githubusercontent.com/souvikotaku/tensorflow_model/main/model.json"></script> -->
+
+		<script src="script.js" defer></script>
+	</body>
+</html>
+
+
